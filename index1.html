@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Share On Twitter</title>
+<!--bootstrap css-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<style>
+body,head{
+height:100%;
+}
+
+.bg{
+background-image:url("images/6163-abstract-color-background.jpg");
+height:100%;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+
+}
+
+</style>
+
+</head>
+
+<body class="bg">
+<div class="container">
+<br><br><br>
+<div class="col-md-6 offset-md-3" style="background:white;padding:20px;box-shadow:10px 10px 5px #888">
+
+<div class="panel-heading">
+<h1>Share On Twitter</h1>
+
+</div>
+<hr>
+
+<form action="post.php" method="post" enctype="multipart/form-data">
+<textarea name="status" id="status" class="form-control"></textarea><br>
+<input type="file" name="media[]" accept="image/*" class="form-control">
+<br>
+
+<button type="submit" style="border-radius:0px;" class="btn btn-lg btn-block btn-outline-success">POST</button>
+
+</form>
+
+
+</div>
+
+</div>
+
+</body>
+
+
+</html>
